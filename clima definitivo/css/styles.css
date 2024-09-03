@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #000000, #434343); /* Degradado lineal de negro a gris oscuro */
+    color: #fff;
+    overflow: hidden; /* Evita el scroll durante la carga */
+}
+
+.skeleton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo del esqueleto */
+}
+
+.skeleton-card {
+    background: #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.skeleton-temp,
+.skeleton-icon,
+.skeleton-pressure,
+.skeleton-humidity {
+    background: #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.skeleton-temp {
+    height: 30px;
+    width: 80%;
+}
+
+.skeleton-icon {
+    height: 80px;
+    width: 80px;
+    margin: 10px auto;
+}
+
+.skeleton-pressure,
+.skeleton-text,
+.skeleton-humidity {
+    height: 20px;
+    width: 60%;
+}
+
+.background-image {
+    display: none; /* Oculta el contenido real inicialmente */
+    position: relative;
+    height: 100vh;
+    background: url('https://cdn.pixabay.com/photo/2018/05/23/22/37/chinchillas-3425370_960_720.jpg') no-repeat center center;
+    background-size: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-icon img {
+    width: 80px; /* Ajusta según el tamaño del ícono */
+    height: auto;
+    margin: 1rem;
+}
+
+.temperature {
+    font-size: 2em;
+    margin: 1rem;
+}
+.weather-text{
+    font-size:1.2rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+.pressure, .humidity {
+    font-size: 1.2rem;
+    margin: .5rem;
+}

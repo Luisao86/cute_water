@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Actual</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="skeleton">
+        <div class="skeleton-card">
+            <div class="skeleton-temp"></div>
+            <div class="skeleton-ciu"></div>
+            <div class="skeleton-icon"></div>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-pressure"></div>
+            <div class="skeleton-humidity"></div>
+        </div>
+    </div>
+    <div class="background-image" id="real-content" style="display: none;">
+        <div class="card">
+            <div class="weather-info">
+                <div class="temperature" id="temperature">-- °C</div>
+                <div class="temperature" id="sensacion">-- °C</div>
+                <div class="ciudad" id="ciudad"></div>
+                <div class="weather-icon" id="weather-icon"></div>
+                <div class="weather-text" id="weather-text"></div>
+                <div class="pressure" id="pressure">Presión: -- hPa</div>
+                <div class="humidity" id="humidity">Humedad: --%</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
